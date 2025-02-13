@@ -1,34 +1,137 @@
-.recent-updates {
-  padding: 20px;
-  background-color: #f9f9f9;
+/* .recent-updates {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f8f9fa;
 }
 
-.container {
-  max-width: 1200px;
+.recent-updates .container {
+  max-width: 80%;
   margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-updates h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
 .news-image-container {
-  text-align: center;
+  flex: 1;
+  max-width: 120px;
 }
 
 .news-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .news-title {
-  margin-top: 10px;
+  flex: 3;
+  background-color: #0088a9;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .news-title a {
-  color: #333;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .news-title a:hover {
-  color: #007bff;
+  text-decoration: underline;
+} */
+
+
+/* Recent Updates Section */
+.recent-updates {
+  padding: 20px 0;
+  background-color: #f9f9f9; /* Light background */
+}
+
+.recent-updates .container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Swiper Slide Layout */
+.swiper-slide {
+  display: flex;
+  flex-direction: row; /* Image left, text right */
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between image & text */
+}
+
+/* Image Container */
+.news-image-container {
+  width: 30%; /* Set fixed width for all images */
+  max-width: 200px; /* Adjust to fit design */
+  height: 120px; /* Uniform height */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Images */
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill container while keeping proportions */
+  /* border-radius: 8px; */
+  padding-left: 10%;
+}
+
+/* News Text Container */
+.news-content {
+  width: 65%; /* Make text take more space */
+  display: flex;
+  align-items: center;
+  background-color: #008caa; /* Blue background */
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Title Links */
+.news-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+}
+
+/* Swiper Controls */
+.swiper-pagination-bullet {
+  background-color: #008caa !important;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #008caa !important;
 }
